@@ -83,7 +83,35 @@ SITE MADE BY:
 ░ ▒▓ ░▒▓░ ▒▒   ▓▒█ ▒▓▒▒░  
   ░▒ ░ ▒░  ░   ▒▒  ▒ ░▒░  
    ░   ░   ░   ▒   ░ ░ ░  
-   ░           ░   ░   ░  
+   ░           ░   ░   ░   
 `;
 console.log(asciiArt);
 
+// Projects Slider functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.projects-slider');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentIndex = 0;
+
+    function updateSlider() {
+        const cards = document.querySelectorAll('.project-card');
+        const cardWidth = cards[0].offsetWidth;
+        slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        const cards = document.querySelectorAll('.project-card');
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+});
