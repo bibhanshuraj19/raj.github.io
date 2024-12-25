@@ -104,6 +104,64 @@ body, html {
     margin: 0;
 }
 
+.projects-container {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.project-card {
+    min-width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
+}
+
+.project-card h3 {
+    margin: 0 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-card p {
+    margin: 0;
+    font-family: "Nerko One", cursive;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.prev-btn, .next-btn {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 a {
     color:white;
 }
