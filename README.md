@@ -8,3 +8,4 @@ idk what tf i did, i just completely remade my site :fire: now its much cooler (
 [Discord automod bypasser](https://bypass.zuot.cc/)
 [James saying cringe things](https://gyat.zuot.cc/)
 # raj.github.io
+https://bibhanshuraj19.github.io/raj.github.io/
