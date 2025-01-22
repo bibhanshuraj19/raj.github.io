@@ -1,35 +1,56 @@
-<div id="overlay">
-    <p>CLICK TO ENTER</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="overlay">
+        <p>CLICK TO ENTER</p>
+    </div>
 
-<div class="ramecek">
-    <div class="title"></div>
-    <div class="info">
-    <p><b>Who is raj?</b><br>
-      Hi, I'm raj. I was born and currently live in India, and I'm 20 years old. I am a college student.</p>           
-    <p><b>My Favorite Songs and Artist</b><br> 
-        I usually don't like talking about my music taste and playlist because people make fun of it, but my favorite song right now is <b><a href="https://music.youtube.com/watch?v=LqU7QnoIbfk">"Fire&Ice" by rarin</a></b>, and my favorite artist is <b><a href="https://www.youtube.com/@raftaarmusic">Raftaar</a></b>.</p>
-    <div class="info">
-    <audio id="background-music" autoplay controls loop hidden><source src="./images/Corduroy.mp3" type="audio/mp3"></audio>
-    
-    <div class="projects-container">
-        <h2>My Projects</h2>
-        <div class="projects-slider">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of project 1</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of project 2</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Description of project 3</p>
-            </div>
+    <div class="ramecek">
+        <div class="title"></div>
+        <div class="info">
+            <p><b>Who is Raj?</b><br>
+                Hi, I'm Raj. I was born and currently live in India, and I'm 20 years old. I am a college student.
+            </p>
+            <p><b>My Favorite Songs and Artist</b><br>
+                I usually don't like talking about my music taste and playlist because people make fun of it, but my favorite song right now is <b><a href="https://music.youtube.com/watch?v=LqU7QnoIbfk">"Fire&Ice" by Rarin</a></b>, and my favorite artist is <b><a href="https://www.youtube.com/@raftaarmusic">Raftaar</a></b>.
+            </p>
         </div>
-        <div class="slider-controls">
-            <button class="prev-btn">Previous</button>
-            <button class="next-btn">Next</button>
+        <audio id="background-music" autoplay controls loop hidden>
+            <source src="./images/Corduroy.mp3" type="audio/mp3">
+        </audio>
+        <div class="projects-container">
+            <h2>My Projects</h2>
+            <div class="projects-slider">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Description of project 3</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn">Previous</button>
+                <button class="next-btn">Next</button>
+            </div>
         </div>
     </div>
+
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="./videos/background.mp4" type="video/mp4">
+    </video>
+
+    <script src="script.js"></script>
+</body>
+</html>
